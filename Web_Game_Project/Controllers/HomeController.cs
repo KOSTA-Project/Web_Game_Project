@@ -26,5 +26,10 @@ namespace Web_Game_Project.Controllers
 
             return View();
         }
+
+        public ActionResult Chat()
+        {
+            return View();
+        }
     }
 }
