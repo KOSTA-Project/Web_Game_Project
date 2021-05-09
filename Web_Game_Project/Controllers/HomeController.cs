@@ -44,7 +44,19 @@ namespace Web_Game_Project.Controllers
             //Console.WriteLine($"{aa}");
             return RedirectToAction("Login");
         }
+        public ActionResult Signup()
+        {
 
+            string uid = Request.QueryString["newID"];
+            string pwd = Request.QueryString["newPWD"];
+            if(uid != null)
+            {
+                //SQLDB db = new SQLDB(@"Data Source=192.168.0.85;Initial Catalog=myDB;Persist Security Info=True;User ID=kosta;Password=kosta");
+                // 새롭게 입력받은 데이터를 가지고 DB update
+                // main page로 Redirection
+            }
+            return View();
+        }
 
         public ActionResult Login()
         {
